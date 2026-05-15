@@ -4,3 +4,7 @@
 @import './base/variables.css';
 @import './base/globals.css';
 
+/* blocks */
+@import './blocks/header.css';
+@import './blocks/menu.css';
+
