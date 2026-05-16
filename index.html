@@ -20,7 +20,11 @@
             height="20"
           />
         </a>
-        <nav id="header__menu" class="menu header__menu" area-label="Главное меню">
+        <nav
+          id="header__menu"
+          class="menu header__menu"
+          area-label="Главное меню"
+        >
           <ul class="menu__list">
             <li class="menu__item">
               <a class="menu__link" href="#air-mag" lang="en">Air Mag</a>
@@ -85,5 +89,42 @@
         </div>
       </div>
     </header>
+    <main class="main">
+      <section class="hero">
+        <div class="container hero__container">
+          <header class="hero__header">
+            <ul class="hero__benefits-list">
+              <li class="hero__benefits-item">стиль</li>
+              <li class="hero__benefits-item">скорость</li>
+            </ul>
+            <h1 class="hero__title">
+              Nike <strong class="hero__title-accent">air</strong> mag
+            </h1>
+          </header>
+          <picture>
+            <source srcset="./img/nike-air-mag-1.webp" type="image/webp" />
+            <img
+              class="hero__img"
+              src="./img/nike-air-mag-1.png"
+              alt="Кроссовок Nike Air Mag с желтым кольцом под подошвой"
+              loading="lazy"
+              width="846"
+              height="713"
+            />
+          </picture>
+          <footer class="hero__footer">
+            <a class="hero__footer-link" href="#">
+              Подробнее
+              <svg width="24" height="24">
+                <use
+                  class="hero__footer-icon"
+                  href="./icons/sprites.svg#double-arrow-right"
+                ></use>
+              </svg>
+            </a>
+          </footer>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
