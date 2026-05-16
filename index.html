@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="./icons/favicon-24x24.svg" />
+    <script src="./js/index.js" type="module" defer></script>
     <link href="./css/index.css" rel="stylesheet" />
     <title>Nike Air Mag</title>
   </head>
@@ -19,7 +20,7 @@
             height="20"
           />
         </a>
-        <nav class="menu header__menu" area-label="Главное меню">
+        <nav id="header__menu" class="menu header__menu" area-label="Главное меню">
           <ul class="menu__list">
             <li class="menu__item">
               <a class="menu__link" href="#air-mag" lang="en">Air Mag</a>
@@ -38,7 +39,11 @@
         <div class="header__controls">
           <a class="header__order" href="#">Сделать заказ</a>
           <div class="header__actions">
-            <button class="header__actions-button" aria-label="Поиск" title="Поиск">
+            <button
+              class="header__actions-button"
+              aria-label="Поиск"
+              title="Поиск"
+            >
               <svg width="24" height="24">
                 <use
                   class="header__actions-icon"
@@ -46,7 +51,11 @@
                 ></use>
               </svg>
             </button>
-            <button class="header__actions-button" aria-label="Корзина" title="Корзина">
+            <button
+              class="header__actions-button"
+              aria-label="Корзина"
+              title="Корзина"
+            >
               <svg width="24" height="24">
                 <use
                   class="header__actions-icon"
@@ -54,7 +63,13 @@
                 ></use>
               </svg>
             </button>
-            <button class="header__burger burger" aria-label="Открыть меню" title="Корзина">
+            <button
+              class="header__burger burger"
+              aria-label="Открыть меню"
+              aria-expanded="false"
+              aria-controls="header__menu"
+              title="Корзина"
+            >
               <svg width="24" height="24">
                 <use
                   class="burger__icon burger__icon--menu"
